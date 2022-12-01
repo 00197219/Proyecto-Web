@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="styleIS.css">
+</head>
+<body>
+	
+<div class="wrapper">
+	<div class="form">
+		<div class="title">
+			Iniciando sesion
+		</div>
+		<form method="post" action="successpage.html" onsubmit="return validation();">
+			<div class="input_wrap">
+				<label for="input_text">Correo o usuario</label>
+				<div class="input_field">
+					<input type="text" class="input" id="input_text">
+				</div>
+			</div>
+			<div class="input_wrap">
+				<label for="input_password">Contraseña</label>
+				<div class="input_field">
+					<input type="password" class="input" id="input_password">
+				</div>
+			</div>
+			<div class="input_wrap">
+				<span class="error_msg">Contraseña incorrecta, intente de nuevo</span>
+				<input type="submit" id="login_btn" class="btn disabled" value="Login" disabled="true">
+			</div>
+		</form>
+	</div>
+</div>
+
+<script src="mainIS.js"></script>
+
+</body>
+</html>
